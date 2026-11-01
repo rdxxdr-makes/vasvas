@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Budget Bites – Dining Simulation</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>🍽️ Budget Bites</h1><p>The menu is sorted by price. Find the <b>priciest dish you can afford</b> by checking the midpoint.</p></header>
+<main>
+ <section class="panel">
+  <div class="stats"><span>Round <b id="round">1</b>/5</span><span>Budget <b id="budget">₹0</b></span>
+   <span>Steps <b id="steps">0</b></span><span>Mistakes <b id="miss">0</b></span><span>Score <b id="score">0</b></span></div>
+  <p id="msg" class="msg">Press “Compare with midpoint” to start.</p>
+  <div class="actions">
+   <button id="probe">Compare with midpoint</button>
+   <button id="up" disabled>⬆ Search pricier half</button>
+   <button id="down" disabled>⬇ Search cheaper half</button>
+   <button id="next" hidden>Next round →</button>
+  </div>
+  <p class="engine" id="engine"></p>
+ </section>
+ <section class="panel"><ul id="menu"></ul></section>
+</main>
+<script src="game.js"></script></body></html>
